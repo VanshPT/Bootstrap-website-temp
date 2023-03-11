@@ -10,11 +10,12 @@
    
     <title>Home | Thakkars Web Development Blog</title>
     <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:880px)" href="index1.css"> -->
     <!-- https://source.unsplash.com/1400x350/?seo -->
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Thakkars</a>
+        <a class="navbar-brand" href="index.html">Thakkars</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,9 +51,51 @@
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button type="button" class="btn btn-primary margin" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button type="button" class="btn btn-success margin" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
           </form>
         </div>
       </nav>
+     
+
+<!-- login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signupModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
       <div class="bd-example">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -104,7 +147,7 @@
         </div>
       </div>
     <div id="card_holder">
-      <div class="card" style="width: 18rem;">
+      <div class="card card1" style="width: 18rem;">
         <img src="card1.png" height="250" width="250" class="card-img-top image" alt="...">
         <div class="card-body">
           <h5 class="card-title">Introduction to Web Development</h5>
@@ -112,7 +155,7 @@
           <a href="#" class="btn btn-primary">Read More</a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card card1" style="width: 18rem;">
         <img src="card2.jpg" height="250" width="250" class="card-img-top image" alt="...">
         <div class="card-body">
           <h5 class="card-title">How to start Web Development</h5>
@@ -120,7 +163,7 @@
           <a href="#" class="btn btn-primary">Read More</a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card card1" style="width: 18rem;">
         <img src="card3.jpg" height="250" width="250" class="card-img-top image" alt="...">
         <div class="card-body">
           <h5 class="card-title">Brief description on all front end technologies</h5>
@@ -130,15 +173,15 @@
       </div>
     </div>
     <div id="card_holder">
-      <div class="card" style="width: 18rem;">
+      <div class="card card1" style="width: 18rem;">
         <img src="card4.png" height="250" width="250"  class="card-img-top image" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Brief description on all backend technologies</h5>
+          <h5 class="card-title" >Brief description on all backend technologies</h5>
           <p class="card-text">Learn with us brief description about general back end technologies.</p>
           <a href="#" class="btn btn-primary">Read More</a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card card1" style="width: 18rem;">
         <img src="card5.jpg" height="250" width="250" class="card-img-top image" alt="...">
         <div class="card-body">
           <h5 class="card-title">Search Engine Optimisation</h5>
@@ -146,7 +189,7 @@
           <a href="#" class="btn btn-primary">Read More</a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card card1" style="width: 18rem;">
         <img src="card6.png" width="250" height="250" class="card-img-top image" alt="...">
         <div class="card-body">
           <h5 class="card-title">Learning Web Security in brief</h5>

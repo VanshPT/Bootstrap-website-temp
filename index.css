@@ -1,7 +1,11 @@
 #card_holder{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
+    margin: 0rem;
+}
+.card1{
     margin:1.5rem 0rem;
 }
 /* .image img{
@@ -16,4 +20,7 @@
     right: 0;
     left: 0;
     z-index: 1030;
+}
+.margin{
+    margin:0px 0.4rem;
 }
